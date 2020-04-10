@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e9aefde-51b2-4fcc-a927-2315c5a9c57a" name="Default Changelist" comment="" />
+    <list default="true" id="2e9aefde-51b2-4fcc-a927-2315c5a9c57a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Send.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program/Send.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZuH00F2j8egPDZ2Lx6knPEdecc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -23,6 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Message_Handler" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -40,7 +49,7 @@
       <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 9\" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Run">
+  <component name="RunManager" selected="Python.Send">
     <configuration name="Add_User_Info" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="telegram bot framework (2) ver 7" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Run" />
         <item itemvalue="Python.Send" />
+        <item itemvalue="Python.Run" />
         <item itemvalue="Python.Markup_Example" />
         <item itemvalue="Python.Add_User_Info" />
         <item itemvalue="Python.Test (1)" />
@@ -190,30 +199,30 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="580" y="190" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585706902396" />
-    <state width="1453" height="221" key="GridCell.Tab.0.bottom" timestamp="1586085748625">
+    <state width="1453" height="221" key="GridCell.Tab.0.bottom" timestamp="1586508915518">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="221" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
-    <state width="1453" height="221" key="GridCell.Tab.0.center" timestamp="1586085748625">
+    <state width="1453" height="221" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586508915518" />
+    <state width="1453" height="221" key="GridCell.Tab.0.center" timestamp="1586508915517">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="221" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
-    <state width="1453" height="221" key="GridCell.Tab.0.left" timestamp="1586085748625">
+    <state width="1453" height="221" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586508915517" />
+    <state width="1453" height="221" key="GridCell.Tab.0.left" timestamp="1586508915517">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="221" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
-    <state width="1453" height="221" key="GridCell.Tab.0.right" timestamp="1586085748625">
+    <state width="1453" height="221" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586508915517" />
+    <state width="1453" height="221" key="GridCell.Tab.0.right" timestamp="1586508915517">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1453" height="221" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
+    <state width="1453" height="221" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586508915517" />
     <state x="310" y="77" key="SettingsEditor" timestamp="1585682384174">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="310" y="77" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1585682384174" />
-    <state x="508" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1586079158312">
+    <state x="508" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1586507137905">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="508" y="259" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1586079158312" />
+    <state x="508" y="259" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1586507137905" />
     <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586084077060">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
