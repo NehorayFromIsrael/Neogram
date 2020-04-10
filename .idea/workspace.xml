@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2e9aefde-51b2-4fcc-a927-2315c5a9c57a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ZuH00F2j8egPDZ2Lx6knPEdecc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Message_Handler" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 15\Message_Handler" />
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 15" />
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 14\Content" />
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 12\Other_Functions" />
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 10\Content" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 14" />
+      <recent name="C:\Users\נהוראי\Desktop\telegram bot framework (2) ver 9\" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Run">
+    <configuration name="Add_User_Info" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram bot framework (2) ver 7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Add_User_Info.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Markup_Example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram bot framework (2) ver 7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Markup_Functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Markup_Functions/Markup_Example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram bot framework (2) ver 7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\נהוראי\AppData\Local\Programs\Python\Python38-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Send" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram bot framework (2) ver 7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Program" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Program/Send.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="telegram bot framework (2) ver 7" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Run" />
+        <item itemvalue="Python.Send" />
+        <item itemvalue="Python.Markup_Example" />
+        <item itemvalue="Python.Add_User_Info" />
+        <item itemvalue="Python.Test (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2e9aefde-51b2-4fcc-a927-2315c5a9c57a" name="Default Changelist" comment="" />
+      <created>1585681832254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585681832254</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="508" y="73" key="#Run" timestamp="1585681934174">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="508" y="73" key="#Run/62.0.1474.864@62.0.1474.864" timestamp="1585681934174" />
+    <state x="447" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585812589443">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="447" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1474.864@62.0.1474.864" timestamp="1585812589443" />
+    <state x="473" y="242" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586082586776">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="473" y="242" key="#com.intellij.fileTypes.FileTypeChooser/62.0.1474.864@62.0.1474.864" timestamp="1586082586776" />
+    <state x="530" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585720483371">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="530" y="182" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/62.0.1474.864@62.0.1474.864" timestamp="1585720483371" />
+    <state x="580" y="190" key="FileChooserDialogImpl" timestamp="1585706902396">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="580" y="190" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585706902396" />
+    <state width="1453" height="221" key="GridCell.Tab.0.bottom" timestamp="1586085748625">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1453" height="221" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
+    <state width="1453" height="221" key="GridCell.Tab.0.center" timestamp="1586085748625">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1453" height="221" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
+    <state width="1453" height="221" key="GridCell.Tab.0.left" timestamp="1586085748625">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1453" height="221" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
+    <state width="1453" height="221" key="GridCell.Tab.0.right" timestamp="1586085748625">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state width="1453" height="221" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586085748625" />
+    <state x="310" y="77" key="SettingsEditor" timestamp="1585682384174">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="310" y="77" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1585682384174" />
+    <state x="508" y="259" key="com.intellij.ide.util.TipDialog" timestamp="1586079158312">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="508" y="259" key="com.intellij.ide.util.TipDialog/62.0.1474.864@62.0.1474.864" timestamp="1586079158312" />
+    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1586084077060">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="462" y="181" width="672" height="678" key="search.everywhere.popup/62.0.1474.864@62.0.1474.864" timestamp="1586084077060" />
+  </component>
+</project>
