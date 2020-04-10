@@ -11,6 +11,7 @@ import Program.Update_Last_Seen_And_UserName as Update_Last_Seen_And_UserName
 import Program.Get_Bot_Variables as Get_Bot_Variables
 import Message_Handler.Start.Start as START
 import Message_Handler.Start.Message_Handler as MES_HANDEL
+import Program.Update_Phone as Update_Phone
 
 #*******************************************************************************************
 
@@ -86,12 +87,12 @@ class Telegram_Bot(object):
         Markup_Functions.Func(cls.Bot_Variables)
 
 
-
         MES_HANDEL.Func(update,context)
 
         # - update last seen and username - #
         Update_Last_Seen_And_UserName.Func(cls.Bot_Variables)
 
+        Update_Phone.Func(cls.Bot_Variables)
 
 #*******************************************************************************************
 
