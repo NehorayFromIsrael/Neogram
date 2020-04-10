@@ -16,9 +16,11 @@ Database_Name = ["Telegram_Bot"]
 
 # - get collections use func: Mon.Func(Database_Name,Collection_Name) - #
 Mongo_Users = Mon.Func(Database_Name[0], "Users")
+Mongo_Locations = Mon.Func(Database_Name[0], "Locations")
+
 
 # - Add mongo collections to list - # 
-collections = [Mongo_Users]
+collections = [Mongo_Users,Mongo_Locations]
 
 #_______________________________________________________#
 

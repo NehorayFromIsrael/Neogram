@@ -12,6 +12,8 @@ import Program.Get_Bot_Variables as Get_Bot_Variables
 import Message_Handler.Start.Start as START
 import Message_Handler.Start.Message_Handler as MES_HANDEL
 import Program.Update_Phone as Update_Phone
+import Program.Update_Location as Update_Location
+
 
 #*******************************************************************************************
 
@@ -93,6 +95,7 @@ class Telegram_Bot(object):
         Update_Last_Seen_And_UserName.Func(cls.Bot_Variables)
 
         Update_Phone.Func(cls.Bot_Variables)
+        Update_Location.Func(cls.Bot_Variables)
 
 #*******************************************************************************************
 
