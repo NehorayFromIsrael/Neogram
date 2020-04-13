@@ -47,6 +47,7 @@ in this file you edit the configurations of your bot
     Update = Bot_Variables[12]
     Other_Variables = Bot_Variables[13]
     Context = Bot_Variables[14]
+    Bot_Info = Bot_Variables[15]
 
 --- Get_Functions ---
 

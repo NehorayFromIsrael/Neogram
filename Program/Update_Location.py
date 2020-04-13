@@ -4,13 +4,11 @@ import Program.Get_Houer as Time
 def Func(Bot_Variables):
 
     try:
-        Update = Bot_Variables[12]
+        Update = Bot_Variables[0]
         Chat_ID = Bot_Variables[1]
 
-        Mongo_Collections = Bot_Variables[10]
-        Mongo_Locations = Mongo_Collections[1]
+        Mongo_Locations = Bot_Variables[2]
 
-        Location = Update["message"]["location"]
 
 
         user_location = {
@@ -21,7 +19,6 @@ def Func(Bot_Variables):
             'latitude' : Update["message"]["location"]['latitude']
         }
 
-        print(user_location)
 
         Mongo_Locations.insert_one(user_location)
 

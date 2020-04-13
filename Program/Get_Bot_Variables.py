@@ -1,17 +1,21 @@
 import Program.Find_File_ID as Find_File_ID
 import configure
 import Add_User_Info as Add_User_Info
+import telegram
+import Program.Update_Bot_Asset as Update_Bot_Asset
+import Program.message_when_reach_bot_users_limit as message_when_reach_bot_users_limit
+import Program. check_if_there_is_bot_that_not_reach_the_limit as  check_if_there_is_bot_that_not_reach_the_limit
 
-def Func(update):
-    # - get bot TOKEN - #
-    TOKEN = configure.TOKEN
+def Func(update,*args):
+
+
     context = update[1]
     update = update[0]
 
-    # - get mongo collections - #
-    Mongo_Collections = configure.collections
+
 
     # - get user info - #
+
     try:
 
         Json_Message = update["message"]
@@ -32,28 +36,67 @@ def Func(update):
         Message_ID = update["callback_query"]["message"]["message_id"]
         File_ID = Find_File_ID.Func(Json_Message)
 
+    # - get mongo collections - #
+    Mongo_Collections = configure.collections
 
-    Bot_Variables = [TOKEN, Chat_ID, First_Name, UserName, Message, Message_ID, File_ID,
-                         None, None, None, Mongo_Collections,
-                         Json_Message,update,configure.Other_Variables]
+    Users = Mongo_Collections[0]
+    Assets = Mongo_Collections[2]
+
+
+    # - get bot TOKEN - #
+    if len(args) != 0:
+        TOKEN = args[0]
+    else:
+
+        bot_id = Users.find_one({"chat_id":Chat_ID})
+        bot_id = bot_id["bot_user"]
+
+        TOKEN = Assets.find_one({"id":bot_id})
+        TOKEN = TOKEN["TOKEN"]
+
 
 
 
     # - get user info from mongo - #
 
+
     User_Doc = Mongo_Collections[0].find_one({"chat_id": Chat_ID})
-    if User_Doc == None:
 
-        # - save user information in database - #
-        Add_User_Info.Func(Bot_Variables)
+    if User_Doc == None or Message == "/start":
 
-        # - and then get user info from mongo - #
-        User_Doc = Mongo_Collections[0].find_one({"chat_id": Chat_ID})
+        Bot_Variables = [TOKEN, Chat_ID, First_Name, UserName, Message, Message_ID, File_ID,
+                         None, None, None, Mongo_Collections,
+                         Json_Message, update, configure.Other_Variables, context, telegram.Bot(TOKEN).get_me()]
+
+        Bot_User = Bot_Variables[15]["id"]
+
+        users_in_this_bot = Mongo_Collections[0].find({"bot_user": Bot_User}).count()
+
+        check = check_if_there_is_bot_that_not_reach_the_limit.Func(Bot_Variables)
+
+        check_if_user_id_in_mongo = Mongo_Collections[0].find({"chat_id": Chat_ID}).count() >0
+
+        # - if users limit per bot greater then current number of users in bot - #
+        if configure.Users_Per_Bot > users_in_this_bot or configure.Users_Per_Bot == 0 or check == True and check_if_user_id_in_mongo == False:
+
+            # - save user information in database - #
+            Add_User_Info.Func(Bot_Variables)
+
+            # - and then get user info from mongo - #
+            User_Doc = Mongo_Collections[0].find_one({"chat_id": Chat_ID})
+
+            # - update bot asset in mongo assets - #
+            Update_Bot_Asset.Func(Bot_Variables)
+
+
+        else:
+            message_when_reach_bot_users_limit.Func(Bot_Variables)
 
 
     Bot_Variables = [TOKEN, Chat_ID, First_Name, UserName, Message, Message_ID, File_ID,
                          User_Doc["virtual_location"], User_Doc["user privileges"], User_Doc["language"], Mongo_Collections,
                          Json_Message, update, configure.Other_Variables,context]
+
 
     return Bot_Variables
 

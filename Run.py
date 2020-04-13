@@ -6,11 +6,11 @@ import configure
 
 
 
-# - bot token - #
-Telegram_Bot.TOKEN = configure.TOKEN
+# - run all bots - #
+for i in range(len(configure.TOKEN)):
+    # - bot token - #
+    Telegram_Bot.TOKEN = configure.TOKEN[i]
 
+    # - start bot task manager - #
+    Telegram_Bot.bot_dispatcher()
 
-
-
-# - start bot task manager - #
-Telegram_Bot.bot_dispatcher()

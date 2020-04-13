@@ -5,9 +5,8 @@ import Program.Get_Bot_Variables as Get_Bot_Variables
 # - use this template to create functions in your bot , variables and functions are listed down below - #
 # - its highly recommended not to change any line from this template (just add your code down below, dont edit any existing lines) - #
 
-def Func(update,context):
-
-    Bot_Variables = Get_Bot_Variables.Func([update,context])
+def Func(update,context,TOKEN):
+    Bot_Variables = Get_Bot_Variables.Func([update,context],TOKEN)
 
     # - Variables - #
     """
@@ -35,6 +34,5 @@ def Func(update,context):
     """
 
     Get_Content.Func(Bot_Variables, "Content_Home_Page_Keyboard_Example")
-
 
 

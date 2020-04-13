@@ -3,10 +3,10 @@ import Program.Get_Houer as Time
 
 def Func(Bot_Variables):
 
-    Users_Mongo = Bot_Variables[10][0]
+    Users_Mongo = Bot_Variables[0]
     Chat_ID = Bot_Variables[1]
-    UserName = Bot_Variables[3]
-    First_Name = Bot_Variables[2]
+    UserName = Bot_Variables[2]
+    First_Name = Bot_Variables[3]
 
     # - Update username recored - #
     Users_Mongo.update_one({"chat_id": Chat_ID}, {"$set": {"first_name": First_Name}})

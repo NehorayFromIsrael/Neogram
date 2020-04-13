@@ -2,11 +2,9 @@
 def Func(Bot_Variables):
 
     try:
-        Update = Bot_Variables[12]
+        Update = Bot_Variables[0]
         Chat_ID = Bot_Variables[1]
-
-        Mongo_Collections = Bot_Variables[10]
-        Users = Mongo_Collections[0]
+        Users = Bot_Variables[2]
 
         Phone = Update["_effective_message"]['contact']['phone_number']
 

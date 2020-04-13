@@ -5,8 +5,6 @@ import Program.Update_Virtual_Location as Update_Virtual_Location
 
 #todo check all files if ther note ar corrente
 
-#todo save phone and location in database
-
 #todo add text message html format like bold italic etc
 
 #todo make send function can send from url and from disk
@@ -169,4 +167,6 @@ if __name__ == "__main__":
 
     f_id ='AgACAgQAAxkBAAIQbl6QNEXhXbQvFl6mFqjTHA5co5aiAAKwszEbd4yBUKd80DI5Vg8ijrUGI10AAwEAAwIAA20AAzE0AAIYBA'
     t = None
-    Send.Any_File(token,f_id,t)
+    #Send.Any_File(token,f_id,t)
+
+    print(telegram.Bot(token[0]).get_me())

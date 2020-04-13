@@ -9,6 +9,7 @@ def Func(Bot_Variables):
     Chat_ID = Bot_Variables[1]
     First_Name = Bot_Variables[2]
     UserName = Bot_Variables[3]
+    Bot_User = Bot_Variables[15]['id']
 
     user ={
     "chat_id":Chat_ID,
@@ -16,7 +17,7 @@ def Func(Bot_Variables):
     "user_name":UserName,
     "joined_time": {"date":date.today().strftime("%d/%m/%Y"),"time":Time.Get_Houer()},
     "last_seen": {"date":date.today().strftime("%d/%m/%Y"),"time":Time.Get_Houer()},
-    "bot_user":"",
+    "bot_user":Bot_User,
     "user privileges":"user",
     "virtual_location":"Home_Page",
     "language": "default",

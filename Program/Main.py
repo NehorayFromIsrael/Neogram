@@ -13,7 +13,10 @@ import Message_Handler.Start.Start as START
 import Message_Handler.Start.Message_Handler as MES_HANDEL
 import Program.Update_Phone as Update_Phone
 import Program.Update_Location as Update_Location
-
+import Program.Update_Bot_Asset as Update_Bot_Asset
+import configure
+import Program.message_when_reach_bot_users_limit as message_when_reach_bot_users_limit
+import telegram
 
 #*******************************************************************************************
 
@@ -33,7 +36,7 @@ class Telegram_Bot(object):
     def bot_dispatcher(cls):
 
         # - Creating dispatcher object - #
-        updater = Updater(cls.TOKEN,use_context=True,workers=32)
+        updater = Updater(cls.TOKEN,use_context=True,workers=configure.Threads_Per_Bot)
         dispatcher = updater.dispatcher
 
 
@@ -68,14 +71,19 @@ class Telegram_Bot(object):
     @run_async
     def start(cls,update, context):
 
-        START.Func(update, context)
 
-        # - save user information in database - #
-        Add_User_Info.Func(cls.Bot_Variables)
+        cls.Bot_Variables = Get_Bot_Variables.Func([update,context],cls.TOKEN)
 
+        Mongo_Collections = cls.Bot_Variables[10]
+        Users = Mongo_Collections[0]
+        Chat_ID = cls.Bot_Variables[1]
+        Bot_User = telegram.Bot(cls.TOKEN).get_me()
+        Bot_User  = Bot_User["id"]
 
+        user_exist = Users.find({"chat_id":Chat_ID,"bot_user":Bot_User}).count() > 0
 
-
+        if user_exist :
+            START.Func(update, context,cls.TOKEN)
 
 #*******************************************************************************************
 
@@ -85,17 +93,32 @@ class Telegram_Bot(object):
     @run_async
     def Message_Handler(cls,update,context):
 
-        cls.Bot_Variables = Get_Bot_Variables.Func([update,context])
-        Markup_Functions.Func(cls.Bot_Variables)
+        Chat_ID = update["message"]["chat"]["id"]
+        Message = update["message"]["text"]
+        First_Name = update["message"]["chat"]["first_name"]
+        UserName = update["message"]["chat"]["username"]
+        Message_ID = update["message"]["message_id"]
+
+        users = configure.collections[0]
+        locations = configure.collections[1]
 
 
-        MES_HANDEL.Func(update,context)
+        vars = [ update , context ,Message]
+
+        Markup_Functions.Func(vars)
+
+        # - activate message handler func in message_handller folder - #
+        MES_HANDEL.Func(update,context,cls.TOKEN)
 
         # - update last seen and username - #
-        Update_Last_Seen_And_UserName.Func(cls.Bot_Variables)
+        vars = [users,Chat_ID,UserName,First_Name]
+        Update_Last_Seen_And_UserName.Func(vars)
 
-        Update_Phone.Func(cls.Bot_Variables)
-        Update_Location.Func(cls.Bot_Variables)
+        vars = [update,Chat_ID,users]
+        Update_Phone.Func(vars)
+
+        vars = [update,Chat_ID,locations]
+        Update_Location.Func(vars)
 
 #*******************************************************************************************
 
