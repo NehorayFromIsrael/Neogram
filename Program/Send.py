@@ -5,7 +5,6 @@ import Program.Update_Virtual_Location as Update_Virtual_Location
 
 #todo check all files if ther note ar corrente
 
-#todo save phone and location in database
 
 #todo add text message html format like bold italic etc
 

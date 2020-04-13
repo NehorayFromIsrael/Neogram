@@ -98,7 +98,7 @@ for every folder that stored custom functions there is a template + examples ins
 
 --- Send Class ---
 
- all the send functions , use them only in content functions to make all you system well organized
+
 
 # -In order to use Send Functions you have to import Send module: "from Program.Send import Send as Send" - #
 # -In order to use Button Functions you have to import Button module: "from Program.Button import Button as Button" - #
@@ -130,6 +130,10 @@ Send.Edited_Inline_Keyboard(Bot_Variables,"Text Here",
 
 
 Send.Forword(Bot_Variables,from_chat_id,to_chat_id,message_id)
+
+
+# send any file by file id , type : video/voice message/photo/document/sticker
+Send.Any_File(Bot_Variables,file_id,caption)
 
 
 --- Buttons Types ---

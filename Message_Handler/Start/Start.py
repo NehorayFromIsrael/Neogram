@@ -35,6 +35,9 @@ def Func(update,context):
     """
 
     Get_Content.Func(Bot_Variables, "Content_Home_Page_Keyboard_Example")
+    print(Bot_Variables)
+
+
 
 
 
