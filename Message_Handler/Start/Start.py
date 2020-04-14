@@ -34,7 +34,6 @@ def Func(update,context):
     * in order to use "Get_Other_Functions.Func(Other_Function_Name,*args)" you have to import this module: "import Program.Get_Other_Functions as Get_Other_Functions"
     """
 
-    Get_Content.Func(Bot_Variables, "Content_Home_Page_Keyboard_Example")
     print(Bot_Variables)
 
 

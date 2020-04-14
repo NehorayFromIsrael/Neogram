@@ -13,6 +13,8 @@ import Message_Handler.Start.Start as START
 import Message_Handler.Start.Message_Handler as MES_HANDEL
 import Program.Update_Phone as Update_Phone
 import Program.Update_Location as Update_Location
+import time
+import threading
 
 
 #*******************************************************************************************
@@ -51,9 +53,10 @@ class Telegram_Bot(object):
         # - Add inline patterns - #
         Inline_Functions_list = Inline_Funcs.Func()
 
+
+
         for i in range(len(Inline_Functions_list)):
             dispatcher.add_handler(CallbackQueryHandler(Inline_Functions_list[i][0], pattern=Inline_Functions_list[i][1]))
-
 
 
         # - Start checking for updates (checking for new messages) - #
@@ -78,7 +81,6 @@ class Telegram_Bot(object):
 
 
 #*******************************************************************************************
-
 
     # - Message Handler (Recives messages and decide what to do) - #
     @classmethod

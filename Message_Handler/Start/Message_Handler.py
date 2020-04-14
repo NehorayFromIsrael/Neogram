@@ -36,6 +36,5 @@ def Func(update,context):
     """
 
 
-    print(Get_Other_Functions.Func("Other_Facntions_Random_Text_Example"))
 
     print(Bot_Variables)

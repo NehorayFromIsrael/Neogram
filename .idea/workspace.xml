@@ -3,27 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2e9aefde-51b2-4fcc-a927-2315c5a9c57a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content_Deep_Navigation_Keyboard_Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content_Edited_Inline_Keyboard_Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content_Home_Page_Keyboard_Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content_Inline_Keyboard_Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content_Message_Text_Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Content_Template.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inline_Functions/Inline_Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inline_Functions/Inline Example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inline_Functions/Inline_Template.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Deep Navigation Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Go Back To Home Page Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Markup_Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/Message_Handler/Template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Send Inline Keyboard Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Send Text Message Example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inline_Functions/Inline Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inline_Functions/Inline Example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inline_Functions/Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inline_Functions/Template.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Message_Handler/Start/Start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other_Functions/Other_Facntions_Random_Text_Example.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Other_Functions/Other_Fucntions_Template.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program/Get_Bot_Variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program/Get_Bot_Variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program/Markup_Funcs.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program/Markup_Funcs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program/Send.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program/Send.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,22 +204,22 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="580" y="190" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585706902396" />
-    <state width="1444" height="218" key="GridCell.Tab.0.bottom" timestamp="1586794401937">
+    <state width="1444" height="218" key="GridCell.Tab.0.bottom" timestamp="1586869588541">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586794401937" />
-    <state width="1444" height="218" key="GridCell.Tab.0.center" timestamp="1586794401937">
+    <state width="1444" height="218" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
+    <state width="1444" height="218" key="GridCell.Tab.0.center" timestamp="1586869588541">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586794401937" />
-    <state width="1444" height="218" key="GridCell.Tab.0.left" timestamp="1586794401937">
+    <state width="1444" height="218" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
+    <state width="1444" height="218" key="GridCell.Tab.0.left" timestamp="1586869588541">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586794401937" />
-    <state width="1444" height="218" key="GridCell.Tab.0.right" timestamp="1586794401937">
+    <state width="1444" height="218" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
+    <state width="1444" height="218" key="GridCell.Tab.0.right" timestamp="1586869588541">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586794401937" />
+    <state width="1444" height="218" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
     <state x="310" y="77" key="SettingsEditor" timestamp="1585682384174">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
