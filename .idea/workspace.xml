@@ -2,13 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e9aefde-51b2-4fcc-a927-2315c5a9c57a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inline_Functions/Inline Example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inline_Functions/Inline Example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inline_Functions/Template.py" beforeDir="false" afterPath="$PROJECT_DIR$/Inline_Functions/Template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Start.py" beforeDir="false" afterPath="$PROJECT_DIR$/Message_Handler/Start/Start.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Program/Main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/telegram bot framework (2) ver 7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Add_User_Info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inline_Functions/Inline Example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inline_Functions/Template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inline_Functions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Deep Navigation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Home Page#Back.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Send Inline Keyboard.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Send Text Message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Message_Handler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/Start.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Start/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/Template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Message_Handler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other_Functions/Template.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Other_Functions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Button.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Connect_To_Mongo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Find_File_ID.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Get_Bot_Variables.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Get_Content.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Get_Houer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Get_Other_Functions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Inline_Funcs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Markup_Funcs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Send.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Update_Last_Seen_And_UserName.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Update_Location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Update_Phone.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/Update_Virtual_Location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Run.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configure.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/neogram cli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,22 +241,22 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="580" y="190" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1585706902396" />
-    <state width="1444" height="218" key="GridCell.Tab.0.bottom" timestamp="1586869588541">
+    <state width="1444" height="218" key="GridCell.Tab.0.bottom" timestamp="1586979561536">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
-    <state width="1444" height="218" key="GridCell.Tab.0.center" timestamp="1586869588541">
+    <state width="1444" height="218" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1586979561536" />
+    <state width="1444" height="218" key="GridCell.Tab.0.center" timestamp="1586979561536">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
-    <state width="1444" height="218" key="GridCell.Tab.0.left" timestamp="1586869588541">
+    <state width="1444" height="218" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1586979561536" />
+    <state width="1444" height="218" key="GridCell.Tab.0.left" timestamp="1586979561536">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
-    <state width="1444" height="218" key="GridCell.Tab.0.right" timestamp="1586869588541">
+    <state width="1444" height="218" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1586979561536" />
+    <state width="1444" height="218" key="GridCell.Tab.0.right" timestamp="1586979561536">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1444" height="218" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586869588541" />
+    <state width="1444" height="218" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1586979561536" />
     <state x="310" y="77" key="SettingsEditor" timestamp="1585682384174">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
