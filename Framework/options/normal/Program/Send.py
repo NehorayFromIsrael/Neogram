@@ -152,6 +152,21 @@ class Send(object):
                         except:
                             pass
 
+    @classmethod
+    def Callback_Answer(cls,Bot_Variables,text):
+
+        TOKEN = Bot_Variables[0]
+        Update = Bot_Variables[12]
+        callback_query_id = Update["callback_query"]["id"]
+        telegram.Bot(TOKEN).answer_callback_query(callback_query_id, text = text, show_alert = False)
+
+    @classmethod
+    def Callback_Alert(cls,Bot_Variables,text):
+
+        TOKEN = Bot_Variables[0]
+        Update = Bot_Variables[12]
+        callback_query_id = Update["callback_query"]["id"]
+        telegram.Bot(TOKEN).answer_callback_query(callback_query_id, text = text, show_alert = True)
 
 # *******************************************************************************************
 
@@ -169,3 +184,5 @@ if __name__ == "__main__":
     f_id ='AgACAgQAAxkBAAIQbl6QNEXhXbQvFl6mFqjTHA5co5aiAAKwszEbd4yBUKd80DI5Vg8ijrUGI10AAwEAAwIAA20AAzE0AAIYBA'
     t = None
     Send.Any_File(token,f_id,t)
+
+

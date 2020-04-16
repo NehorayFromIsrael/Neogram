@@ -1,19 +1,30 @@
 
-    --INSTALLATION--
 
-   1. Run this command in this folder to install packages: pip install -r requirements.txt
-   2. Download and install MongoDB: https://www.mongodb.com
 
-   * you have to install MongoDB on your machine in order to make all functions available
+**** run "Run.py" file to run bot ****
 
-* run "Run.py" to run bot
-
-* every time user get connected to the bot its save his info inside "Users" collection in mongodb
-you can check Add_User_Info file to see what values are saved and also change them
+**** if its first time you run this bot on your machine it may take a couple of minutes to install the requirements **** 
 
 
 
---- configure file ---
+
+
+
+**** every time user join to the bot its save his info inside "Users" collection in mongodb 
+you can check Add_User_Info file to see what values are saved and also change them ****
+
+
+**** every time user send message his "last_seen" value in mongodb "Users" collection is updated ****
+
+**** every time user pressed on send phone button (Button.Markup_Phone("send phone"))  his "phone" value in mongodb "Users" collection is updated ****
+
+**** every time user pressed on send location button (Button.Markup_Location("send location"))  his "location info" value in mongodb "Location" collection is updated ****
+
+
+
+
+
+--- configure.py file ---
 
 in this file you edit the configurations of your bot
 
@@ -27,7 +38,7 @@ in this file you edit the configurations of your bot
 --- Bot_Variables Array---
 
  Bot_Variables is an array that stored all bot user info from message, like chat_id,the text of his message etc,
- its store also the MongoDB collections you entered in configure file
+ its store also the MongoDB collections you entered in "configure file"
  and also other variable you may wont to pass also configured in "configure" file
 
  you have easy access from any func to all the variables you ever need for your bot
@@ -48,60 +59,61 @@ in this file you edit the configurations of your bot
     Other_Variables = Bot_Variables[13]
     Context = Bot_Variables[14]
 
---- Get_Functions ---
-
-    there is 2 Get_Functions you need to use and they have major job to make the system
-    simple and easy to read this is the functions and how to import and used them + explanation how the work:
-
-   Get_Content(Bot_Variables,Content_Name) , "import Program.Get_Content as Get_Content"
-   Get_Other_Functions.Func(Other_Function_Name,*args) , "import Program.Get_Other_Functions as Get_Other_Functions"
-
-   When you create a file inside Content folder or Other_Functions folder in order to activate the func inside one of the files
-   you dont need to import them individual you only need to use one of the get functions and pass the name of the file you need(no .py included  extension )
-   to activate and it will be done dynamically and automatically ,no need for import and run  individual
 
 
-
---- System Structure & Logic ---
-
-the main folder includes 5 additional folders to store functions, there is a specific use for ech folder:
-
-Content = in this you store the "content" functions, what is a content function? every functions that use the Send class
-like Send.Message , Send.Keyboard etc, in short every functions that interact directly whit the bot user.
-
-when you add file to this folder to activate the function that inside the file you will use:
-Get_Content.Func(Bot_Variables,"name of the file in content folder not include .py  extension") you can import this by use "from import Program.Get_Content as Get_Content"
-
-
-Inline_Functions = in this folder you put every functions you wont to attached to inline callback button,
-the name of the func will be the name of the file(no .py included  extension )
-
-Message_Handler = in this folder you put the functions that runs every time user sends message to the bot,
+--- Message_Handler (folder) ---
+	
+ in this folder you put the functions that runs every time user sends message to the bot,
 example: if you craeted a file whit the name "hey" inside the file you write fucntion thats send message whit the string "hello", every time user sends the file name in a message (no .py includ)
 the function of the file is activate , in our case sends the message "hello", the bot automatecly activate any function in this folder base if file name equal to user message 
 
-	there is anotehr folder inside "Message_Handler", called "start" whit two files  start.py and Message_Handker.py,
-	start.py = every fucntion you write inside will run when bot user send the command "/start" (or when the bot first lunch by the user)
-	Message_Handker.py =  every fucntion you write inside will run each time user send message
+if you wont to create function that will run whit more then one word , in the file name use "#" character to seperate between the words,
+example: we create file whit the name "a#b.py" every time the user send the message "a" or "b" the fun inside the file will run.
 
 
-Other_Functions = every other function you may create for your bot that dont have a special folder stored here,
-to activate functions from this folder simply import: "import Program.Get_Other_Functions as Get_Other_Functions"
-and use this functions by passing the file name you crated (no .py include) Get_Other_Functions.Func(Other_Function_Name,*args)
-you can also pass variables in args
+there is anotehr folder inside "Message_Handler", called "start" whit two files  start.py and Message_Handler.py,
 
-Program = in this folder all the important file of the system are located its better not to edit anything inside this folder
-
-
-for every folder that stored custom functions there is a template + examples inside, use them!
-
-
---- Send Class ---
+start.py = every fucntion you write inside will run when bot user send the command "/start" (or when the bot first lunch by the user)
+Message_Handler.py =  every fucntion you write inside will run each time user send message
 
 
 
-# -In order to use Send Functions you have to import Send module: "from Program.Send import Send as Send" - #
-# -In order to use Button Functions you have to import Button module: "from Program.Button import Button as Button" - #
+--- Inline_Functions (folder) ---
+
+in this folder you put every functions you wont to attached to inline callback button,
+the name of the func will be the name of the file(no .py included  extension )
+
+
+--- Other_Functions (folder) ---
+
+every other function you may create for your bot that dont have a special folder stored here.
+
+
+--- Program (folder) ---
+
+in this folder all the important file of the system are located, its better not to edit anything inside this folder if you don't know what you doing.
+
+
+
+
+
+
+**** for every folder that stored custom functions there is a template + examples inside, use them ! ****
+
+
+
+
+
+    ---- imports ----
+
+    from Program.Send import Send as Send
+
+    from Program.Button import Button as Button
+
+
+
+
+    --- Send Class ---
 
 
 Send.Message(Bot_Variables,"Paste Text Here")
@@ -128,6 +140,10 @@ Send.Edited_Inline_Keyboard(Bot_Variables,"Text Here",
                             Button.Inline(["u","URL Button","www.google.co.il"])
                             )
 
+
+Send.Callback_Answer(Bot_Variables,"Callback Query Answer")
+
+Send.Callback_Alert(Bot_Variables,"Callback Query Alert")
 
 Send.Forword(Bot_Variables,from_chat_id,to_chat_id,message_id)
 
@@ -171,9 +187,5 @@ Send.Inline_Keyboard(Bot_Variables, "Text Here" ,
                          Button.Inline(  ["U","URL Button","https://www.google.co.il/"] ,  ["C","Callback Button","Template"] ) ,
                          Button.Inline(["C","Callback Button","Template"] ,["U","URL Button","https://www.google.co.il/"])
                          )
-
-
-
-
 
 
