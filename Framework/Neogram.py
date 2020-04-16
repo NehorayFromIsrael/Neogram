@@ -79,7 +79,7 @@ if __name__ == "__main__":
     
     
     while True:
-        in_put = input("\n\tPlesae press the number acording to your action:  ")
+        in_put = input("\n\tPlesae type the number acording to your action:  ")
 
         Run(in_put,func_list ,location)
 
