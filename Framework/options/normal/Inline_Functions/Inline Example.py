@@ -12,10 +12,10 @@ def Your_Code(update,context):
 
     Bot_Variables = Get_Bot_Variables.Func([update,context])
 
-    print(Bot_Variables)
 
     Send.Message(Bot_Variables,"hello")
 
+
     Send.Edited_Inline_Keyboard(Bot_Variables, "Text Here",
-                                Button.Inline(["u", "URL Button", "www.google.co.il"]),
-                                Button.Inline(["c", "Press", "Inline Example"]))
+                                Button.Inline(["c", "Alert", "Alert"]),
+                                Button.Inline(["c", "Answer", "Answer"]))

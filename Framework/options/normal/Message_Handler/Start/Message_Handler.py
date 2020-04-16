@@ -1,20 +1,25 @@
-import Program.Get_Other_Functions as Get_Other_Functions
 import Program.Get_Bot_Variables as Get_Bot_Variables
 from Program.Send import Send as Send
 from Program.Button import Button as Button
 
+
 # - use this template to create functions in your bot , variables and functions are listed down below - #
 # - its highly recommended not to change any line from this template (just add your code down below, dont edit any existing lines) - #
 
-#in order to use "Get_Other_Functions.Func(Other_Function_Name,*args)" you have to import this module: "import Program.Get_Other_Functions as Get_Other_Functions"
-# -In order to use Send Functions you have to import Send module: "from Program.Send import Send as Send" - #
-# -In order to use Button Functions you have to import Button module: "from Program.Button import Button as Button" - #
 
+def Func(update, context):
+    """
+    ---- imports ----
 
+    import Program.Get_Bot_Variables as Get_Bot_Variables
 
-def Func(update,context):
+    from Program.Send import Send as Send
 
-    Bot_Variables = Get_Bot_Variables.Func([update,context])
+    from Program.Button import Button as Button
+
+    """
+
+    Bot_Variables = Get_Bot_Variables.Func([update, context])
 
     # - Variables - #
     """
@@ -32,11 +37,11 @@ def Func(update,context):
     Json_Message = Bot_Variables[11]
     Update = Bot_Variables[12]
     Other_Variables = Bot_Variables[13]
-
+    Context = Bot_Variables[14]
+    
     """
 
-
-    """"
+    """
     --- Send Class ---
 
 
@@ -64,6 +69,10 @@ Send.Edited_Inline_Keyboard(Bot_Variables,"Text Here",
                             Button.Inline(["u","URL Button","www.google.co.il"])
                             )
 
+
+Send.Callback_Answer(Bot_Variables,"Callback Query Answer")
+
+Send.Callback_Alert(Bot_Variables,"Callback Query Alert")
 
 Send.Forword(Bot_Variables,from_chat_id,to_chat_id,message_id)
 
