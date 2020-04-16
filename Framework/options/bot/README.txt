@@ -1,11 +1,16 @@
 
-
+**** first install MongoDB on your system ****
 
 **** run "Run.py" file to run bot ****
 
-**** if its first time you run this bot on your machine it may take a couple of minutes to install the requirements **** 
+**** if its first time you run this bot on your machine it may take
+ a couple of minutes to install the requirements **** 
 
+**** if your machine uses linux os and its your first time to run bot in the system 
+you shuld use "sudo" to run "Run.py" in oeder to install requirements ****
 
+**** if you getting error for requirements installation , please see install.py file 
+inside Program folder to install requirements manually ****
 
 
 

@@ -1,1 +1,0 @@
-#install mongo here and the mongo guo robo3t and all the modules thtas needs to run the bot
