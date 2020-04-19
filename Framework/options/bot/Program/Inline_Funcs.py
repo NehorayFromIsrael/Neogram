@@ -2,7 +2,8 @@
 import importlib
 import os
 import pathlib
-
+import re
+import sys
 
 def Func():
 
@@ -11,7 +12,10 @@ def Func():
 
     My_PATH = str(pathlib.Path().absolute())
 
-    Folder_PATH = "\\Inline_Functions"
+    if re.search("^win",sys.platform):
+        Folder_PATH = "\\Inline_Functions"
+    else:
+        Folder_PATH = "//Inline_Functions"
 
     # - get all modules inside "Inline_Functions" folder - #
 

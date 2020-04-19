@@ -2,6 +2,8 @@
 import importlib
 import os
 import pathlib
+import sys
+import re
 
 def Func(Bot_Variables):
 
@@ -13,8 +15,12 @@ def Func(Bot_Variables):
 
     My_PATH = str(pathlib.Path().absolute())
 
-    Folder_PATH = "\\Message_Handler"
 
+    if re.search("^win",sys.platform):
+        Folder_PATH = "\\Message_Handler"
+    else:
+        Folder_PATH = "//Message_Handler"
+    
     # - get all modules inside "Message_Handler" folder - #
 
     Functions_list = os.listdir(My_PATH + Folder_PATH)

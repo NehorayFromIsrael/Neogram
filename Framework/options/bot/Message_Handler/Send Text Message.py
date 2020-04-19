@@ -1,4 +1,3 @@
-import Program.Get_Other_Functions as Get_Other_Functions
 import Program.Get_Bot_Variables as Get_Bot_Variables
 from Program.Send import Send as Send
 from Program.Button import Button as Button
