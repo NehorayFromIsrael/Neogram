@@ -1,3 +1,5 @@
+import sys
+import pathlib
 
 def StartUp():
     
@@ -70,7 +72,7 @@ def xit():
 
 if __name__ == "__main__":
 
-
+    print(pathlib.Path().absolute())
     func_list = [["StartUp","1",create_new_bot],["StartUp","4",xit]]
 
     location = "StartUp"

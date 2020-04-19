@@ -20,13 +20,18 @@ def Func():
 
 
     print("install requirements...\n")
-        
-    for i in range(len(requirements)):
-        print("install " + requirements[i])
-        s.run("pip3 install " + requirements[i])
-        print(requirements[i] + " installation completed")
+    if re.search("^win",sys.platform):
+        for i in range(len(requirements)):
+            print("install " + requirements[i])
+            s.run("pip3 install " + requirements[i])
+            print(requirements[i] + " installation completed")
 
-
+    else:
+        for i in range(len(requirements)):
+            print("install " + requirements[i])
+            s.run("sudo pip3 install " + requirements[i])
+            print(requirements[i] + " installation completed")
+            
     print("\nrequirements installation completed")
 
 
