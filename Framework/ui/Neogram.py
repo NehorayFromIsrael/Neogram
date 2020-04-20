@@ -116,7 +116,7 @@ def create_new_template(in_put=None,type=None):
         while True:
             in_put = input("\n\tPlease type name for your Function:\t")
 
-        
+
             if not check_if_file_exist(in_put+".py") == True:
                 print("\n\tSorry file name already exist in current path")
             else:
