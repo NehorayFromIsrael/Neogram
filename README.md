@@ -1,7 +1,9 @@
 # Neogram
 GUI Development Framework For Telegram Bots in Python
 
-
-run install.py file, (make sure to run whit python3) to install program
+when you run "install.py" file to install Neogram make sure:
+1. to run with python3 
+2. to run file as Administrator 
+3. to have internet connection
 
 
