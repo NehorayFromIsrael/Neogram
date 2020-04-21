@@ -1,4 +1,4 @@
-import sys
+﻿import sys
 import pathlib
 from distutils.dir_util import copy_tree
 from shutil import copyfile
@@ -194,9 +194,33 @@ def create_new_multibot(in_put=None):
 
 
 def help():
-    print("help")
+    
+    print("\n\n\t---- HELP ----\n")
 
 
+
+    commands = """
+    +====================================+===================================+
+    |               Action               |              Command              |
+    +====================================+===================================+
+    | Crate new bot                      | Neogram new-bot BotName           |
+    +------------------------------------+-----------------------------------+
+    | Crate new Multibot                 | Neogram new-multibot MultiBotName |
+    +------------------------------------+-----------------------------------+
+    | Crate new Message Handler template | Neogram new-t -M TemplateName     |
+    +------------------------------------+-----------------------------------+
+    | Crate new Inline Function template | Neogram new-t -I TemplateName     |
+    +------------------------------------+-----------------------------------+
+    | Lunch Neogram menu mode            | Neogram                           |
+    +------------------------------------+-----------------------------------+
+    | Help                               | Neogram -h                        |
+    +------------------------------------+-----------------------------------+
+    """
+    print(commands)
+
+
+
+    
 
 if __name__ == "__main__":
 
