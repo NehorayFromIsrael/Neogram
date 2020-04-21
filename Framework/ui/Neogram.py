@@ -103,7 +103,7 @@ def create_new_bot(in_put=None):
         if re.search("^win", sys.platform):
             copy_tree("C:\\Program Files\\Neogram\\options\\bot", str(pathlib.Path().absolute()) +"\\" +in_put)
         else: copy_tree(linux_path + "//Neogram//options//bot", str(pathlib.Path().absolute()) +"//" +in_put)
-        print("\n\t{} Generated succssfuly".format(in_put))
+        print("\n\t{} Generated successfully".format(in_put))
 
     location = "break"
 
@@ -154,7 +154,7 @@ def create_new_template(in_put=None,type=None):
             else:
                 shutil.copy2(linux_path + "//Neogram//options//templates//Inline_Functions_Template.py", str(pathlib.Path().absolute()) +"//" +in_put + ".py")
 
-        print("\n\t{} Generated succssfuly".format(in_put))
+        print("\n\t{} Generated successfully".format(in_put))
 
     else:
         print("\n\tSorry file name already exist in current path")
@@ -188,7 +188,7 @@ def create_new_multibot(in_put=None):
         else:
             copy_tree(linux_path + "//Neogram//options//multibot", str(pathlib.Path().absolute()) + "//" + in_put)
 
-        print("\n\t{} Generated succssfuly".format(in_put))
+        print("\n\t{} Generated successfully".format(in_put))
 
     location = "break"
 
@@ -213,7 +213,7 @@ if __name__ == "__main__":
     
     
         while True:
-            in_put = input("\n\tPlesae type the number according to your action:  ")
+            in_put = input("\n\tPlease type the number according to your action:  ")
 
             Run(in_put,func_list ,location)
 

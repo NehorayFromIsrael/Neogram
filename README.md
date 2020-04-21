@@ -17,7 +17,7 @@ Neogram new-bot BotName
 ```
 * BotName = the name for your bot
 
-To crate new multibot (sytem to run multiply telegram bots at one time) type in terminal:
+To crate new multibot (system to run multiply telegram bots at one time) type in terminal:
 ```
 Neogram new-multibot MultiBotName
 ```
