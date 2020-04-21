@@ -4,7 +4,7 @@ from distutils.dir_util import copy_tree
 from shutil import copyfile
 import shutil
 import os
-
+import re
 
 def check_if_file_exist(file_name):
     My_PATH = str(pathlib.Path().absolute())
@@ -19,11 +19,29 @@ def check_if_file_exist(file_name):
 
 
 def StartUp():
-    
-    print("\n\n\t---- Neogram ----")
+
+    Neogram = """
+  _   _                                       
+ | \ | |                                      
+ |  \| | ___  ___   __ _ _ __ __ _ _ __ ___   
+ | . ` |/ _ \/ _ \ / _` | '__/ _` | '_ ` _ \  
+ | |\  |  __/ (_) | (_| | | | (_| | | | | | | 
+ |_| \_|\___|\___/ \__, |_|  \__,_|_| |_| |_| 
+                    __/ |                     
+                   |___/                                     
+    """
+
+    Neogram = """
+            ███╗   ██╗███████╗ ██████╗  ██████╗ ██████╗  █████╗ ███╗   ███╗    
+            ████╗  ██║██╔════╝██╔═══██╗██╔════╝ ██╔══██╗██╔══██╗████╗ ████║    
+            ██╔██╗ ██║█████╗  ██║   ██║██║  ███╗██████╔╝███████║██╔████╔██║    
+            ██║╚██╗██║██╔══╝  ██║   ██║██║   ██║██╔══██╗██╔══██║██║╚██╔╝██║    
+            ██║ ╚████║███████╗╚██████╔╝╚██████╔╝██║  ██║██║  ██║██║ ╚═╝ ██║    
+            ╚═╝  ╚═══╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝    
+    """
+    print( Neogram)
 
     description= """
-
     Usage:
 
     GUI development for Telegram Bots
@@ -31,13 +49,12 @@ def StartUp():
 -----------------------------------------------------------------
     Description:
 
-    Neogram is a simple and easy framwork for developing and building
+    Neogram is a simple and easy framework for developing and building
     Graphical User Interface (GUI) for telegram bots in Python
 -----------------------------------------------------------------
 
-     Copyrights @ Nehoray Shalom (NeohorayFromIsrael Github)
+     Copyrights @ Nehoray Shalom (NeohorayFromIsrael Github) Email: neosh8132@gmail.com
      
-
     \t1. Create New Telegram Bot
     \t2. Create New Multibot (capible to run multiplay telegram bots)
     \t3. Create New Function Template
@@ -47,7 +64,7 @@ def StartUp():
 
 
 
-    print(description + "\n\n")
+    print(description )
 
 
 
@@ -63,7 +80,7 @@ def Run(in_put,func_list,location):
 def create_new_bot(in_put=None):
     global location
     global func_list
-    
+    global linux_path
     location = "create_new_bot"
 
 
@@ -83,8 +100,9 @@ def create_new_bot(in_put=None):
         print("\n\tSorry file name already exist in current path")
     else:
 
-        copy_tree("C:\\Program Files\\Neogram\\options\\bot", str(pathlib.Path().absolute()) +"\\" +in_put)
-    
+        if re.search("^win", sys.platform):
+            copy_tree("C:\\Program Files\\Neogram\\options\\bot", str(pathlib.Path().absolute()) +"\\" +in_put)
+        else: copy_tree(linux_path + "//Neogram//options//bot", str(pathlib.Path().absolute()) +"//" +in_put)
         print("\n\t{} Generated succssfuly".format(in_put))
 
     location = "break"
@@ -98,7 +116,7 @@ def xit():
 
 def create_new_template(in_put=None,type=None):
     global location
-
+    global linux_path
 
     location = "create_new_template"
 
@@ -125,10 +143,16 @@ def create_new_template(in_put=None,type=None):
     if check_if_file_exist(in_put+".py") == True:
 
         if type == "1" or type == "-M":
+            if re.search("^win", sys.platform):
+                shutil.copy2("C:\\Program Files\\Neogram\\options\\templates\\Message_Handler_Template.py", str(pathlib.Path().absolute()) +"\\" +in_put + ".py")
+            else:
+                shutil.copy2(linux_path + "//Neogram//options//templates//Message_Handler_Template.py", str(pathlib.Path().absolute()) +"//" +in_put + ".py")
 
-            shutil.copy2("C:\\Program Files\\Neogram\\options\\templates\\Message_Handler_Template.py", str(pathlib.Path().absolute()) +"\\" +in_put + ".py")
         if type == "2" or type == "-I":
-            shutil.copy2("C:\\Program Files\\Neogram\\options\\templates\\Inline_Functions_Template.py", str(pathlib.Path().absolute()) +"\\" +in_put + ".py")
+            if re.search("^win", sys.platform):
+                shutil.copy2("C:\\Program Files\\Neogram\\options\\templates\\Inline_Functions_Template.py", str(pathlib.Path().absolute()) +"\\" +in_put + ".py")
+            else:
+                shutil.copy2(linux_path + "//Neogram//options//templates//Inline_Functions_Template.py", str(pathlib.Path().absolute()) +"//" +in_put + ".py")
 
         print("\n\t{} Generated succssfuly".format(in_put))
 
@@ -159,8 +183,10 @@ def create_new_multibot(in_put=None):
     if not check_if_file_exist(in_put):
         print("\n\tSorry file name already exist in current path")
     else:
-
-        copy_tree("C:\\Program Files\\Neogram\\options\\multibot", str(pathlib.Path().absolute()) + "\\" + in_put)
+        if re.search("^win", sys.platform):
+            copy_tree("C:\\Program Files\\Neogram\\options\\multibot", str(pathlib.Path().absolute()) + "\\" + in_put)
+        else:
+            copy_tree(linux_path + "//Neogram//options//multibot", str(pathlib.Path().absolute()) + "//" + in_put)
 
         print("\n\t{} Generated succssfuly".format(in_put))
 
@@ -174,6 +200,7 @@ def help():
 
 if __name__ == "__main__":
 
+    linux_path = ""
     check_if_file_exist(file_name="g")
     argv_len = len(sys.argv)
 
@@ -186,7 +213,7 @@ if __name__ == "__main__":
     
     
         while True:
-            in_put = input("\n\tPlesae type the number acording to your action:  ")
+            in_put = input("\n\tPlesae type the number according to your action:  ")
 
             Run(in_put,func_list ,location)
 
