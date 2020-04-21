@@ -35,6 +35,12 @@ Neogram new-t -I TemplateName
 ```
 * TemplateName = the name for your template file
 
+For help type in terminal:
+```
+Neogram -h
+```
+
+
 ##Menu Mode
 
 To lunch Neogram menu mode just type in terminal:
