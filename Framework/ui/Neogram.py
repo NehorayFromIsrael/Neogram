@@ -138,13 +138,47 @@ def create_new_template(in_put=None,type=None):
     location = "break"
 
 
+
+def create_new_multibot(in_put=None):
+    global location
+
+    location = "create_new_multibot"
+
+    print("\n\n\t---- Create New Multibot ----\n")
+
+    if in_put == None:
+        while True:
+            in_put = input("\n\tPlease type name for your multibot:\t")
+            if not check_if_file_exist(in_put):
+                print("\n\tSorry file name already exist in current path")
+            else:
+                break
+
+    print("\n\t{} Telegram multibot is generated...".format(in_put))
+
+    if not check_if_file_exist(in_put):
+        print("\n\tSorry file name already exist in current path")
+    else:
+
+        copy_tree("C:\\Program Files\\Neogram\\options\\multibot", str(pathlib.Path().absolute()) + "\\" + in_put)
+
+        print("\n\t{} Generated succssfuly".format(in_put))
+
+    location = "break"
+
+
+def help():
+    print("help")
+
+
+
 if __name__ == "__main__":
 
     check_if_file_exist(file_name="g")
     argv_len = len(sys.argv)
 
     if argv_len  == 1:
-        func_list = [["StartUp","1",create_new_bot],["StartUp","5",xit],["StartUp","3",create_new_template]]
+        func_list = [["StartUp","1",create_new_bot],["StartUp","5",xit],["StartUp","3",create_new_template],["StartUp","2",create_new_multibot],["StartUp","4",help]]
 
         location = "StartUp"
 
@@ -165,10 +199,15 @@ if __name__ == "__main__":
             try: create_new_bot(in_put=sys.argv[2])
             except : create_new_bot()
 
+        if sys.argv[1] == "new-multibot":
+            try: create_new_multibot(in_put=sys.argv[2])
+            except : create_new_multibot()
+
         if sys.argv[1] == "new-t":
             try: create_new_template(in_put=sys.argv[3], type=sys.argv[2])
             except: create_new_template()
 
-
+        if sys.argv[1] == "-h":
+            help()
 
 
