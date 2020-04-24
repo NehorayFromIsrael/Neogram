@@ -36,6 +36,11 @@ class Telegram_Bot(object):
     # - Bot Dispatcher (bot task manager) - #
     @classmethod
     def bot_dispatcher(cls):
+        global updater
+
+
+
+
 
         # - Creating dispatcher object - #
         updater = Updater(cls.TOKEN,use_context=True,workers=32)
@@ -66,7 +71,7 @@ class Telegram_Bot(object):
         updater.start_polling()
 
         # - If the program close, stop getting updates - #
-        updater.idle()
+        #updater.idle()
 
 
     # - Start command - #
@@ -74,10 +79,11 @@ class Telegram_Bot(object):
     @run_async
     def start(cls,update, context):
 
-
-
         # - get info - #
-        cls.Bot_Variables = Get_Bot_Variables.Func([update,context])
+        cls.Bot_Variables = Get_Bot_Variables.Func([update,context],cls.TOKEN)
+
+
+
 
         Chat_ID = cls.Bot_Variables[1]
 
@@ -130,17 +136,25 @@ class Telegram_Bot(object):
     @run_async
     def Message_Handler(cls,update,context):
 
-        cls.Bot_Variables = Get_Bot_Variables.Func([update,context])
+        cls.Bot_Variables = Get_Bot_Variables.Func([update,context],cls.TOKEN)
         Markup_Functions.Func(cls.Bot_Variables)
 
 
         MES_HANDEL.Func(update,context)
-
         # - update last seen and username - #
         Update_Last_Seen_And_UserName.Func(cls.Bot_Variables)
 
         Update_Phone.Func(cls.Bot_Variables)
         Update_Location.Func(cls.Bot_Variables)
+
+        # - If the message equal to STOP, stop getting updates - #
+        User_Privileges = cls.Bot_Variables[8]
+        Message = cls.Bot_Variables[4]
+
+        if Message == "STOP" and User_Privileges == "root":
+            updater.stop()
+
+        context.args = cls.TOKEN
 
 #*******************************************************************************************
 

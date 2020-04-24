@@ -2,10 +2,8 @@ import Program.Find_File_ID as Find_File_ID
 import configure
 import Add_User_Info as Add_User_Info
 
-def Func(update):
+def Func(update,*token):
 
-    # - get bot TOKEN - #
-    TOKEN = configure.TOKEN
     context = update[1]
     update = update[0]
 
@@ -13,7 +11,12 @@ def Func(update):
     Mongo_Collections = configure.collections
 
     # - get user info - #
+
+
+
+
     try:
+
 
         Json_Message = update["message"]
         Chat_ID = update["message"]["chat"]["id"]
@@ -33,6 +36,12 @@ def Func(update):
         Message_ID = update["callback_query"]["message"]["message_id"]
         File_ID = Find_File_ID.Func(Json_Message)
 
+    # - get bot TOKEN - #
+    try:
+        TOKEN = token[0]
+    except:
+        bot_user = Mongo_Collections[0].find_one({"chat_id": Chat_ID})["bot_user"]
+        TOKEN = Mongo_Collections[2].find_one({"id": bot_user})["TOKEN"]
 
     Bot_Variables = [TOKEN, Chat_ID, First_Name, UserName, Message, Message_ID, File_ID,
                          None, None, None, Mongo_Collections,

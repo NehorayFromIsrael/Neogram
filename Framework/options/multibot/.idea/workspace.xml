@@ -24,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.check_if_there_is_bot_that_not_reach_the_limit">
+  <component name="RunManager" selected="Python.Run">
     <configuration name="Run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="multibot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,21 +88,21 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1438" height="221" key="GridCell.Tab.0.bottom" timestamp="1587585568520">
+    <state width="1453" height="223" key="GridCell.Tab.0.bottom" timestamp="1587739040381">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1438" height="221" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1587585568520" />
-    <state width="1438" height="221" key="GridCell.Tab.0.center" timestamp="1587585568520">
+    <state width="1453" height="223" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1587739040381" />
+    <state width="1453" height="223" key="GridCell.Tab.0.center" timestamp="1587739040381">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1438" height="221" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1587585568520" />
-    <state width="1438" height="221" key="GridCell.Tab.0.left" timestamp="1587585568520">
+    <state width="1453" height="223" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1587739040381" />
+    <state width="1453" height="223" key="GridCell.Tab.0.left" timestamp="1587739040381">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1438" height="221" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1587585568520" />
-    <state width="1438" height="221" key="GridCell.Tab.0.right" timestamp="1587585568520">
+    <state width="1453" height="223" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1587739040381" />
+    <state width="1453" height="223" key="GridCell.Tab.0.right" timestamp="1587739040381">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1438" height="221" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1587585568520" />
+    <state width="1453" height="223" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1587739040381" />
   </component>
 </project>

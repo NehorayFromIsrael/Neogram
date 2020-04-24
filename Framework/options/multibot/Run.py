@@ -2,12 +2,15 @@ from Program.Main import Telegram_Bot
 import configure
 import Program.install as install
 import ctypes, os
-
+import threading
 
 """  run this file to run the telegram bot   """
 
 
-def Run_BOT(TOKEN):
+def Run_BOT(*args):
+
+    TOKEN = ""
+    TOKEN = TOKEN.join(args)
     # - bot token - #
     Telegram_Bot.TOKEN = TOKEN
 
@@ -33,8 +36,15 @@ except:
     else:
         print(" its your first time to run the bot on this machine you have to run as administrator in order to install requierments")
 
-    
-   
-Run_BOT(configure.TOKEN)
+TOKENS = configure.TOKENS
+
+
+for i in range(len(TOKENS)):
+    for x in range(len(TOKENS[i]["tokens"])):
+        T = TOKENS[i]["tokens"][x]
+
+        threading.Thread(target=Run_BOT, args=(str(T))).start()
+
+
     
     

@@ -6,12 +6,12 @@ import Program.Connect_To_Mongo as Mon
 # - all tokens in every account list will run  by threads (in the same time)- #
 
 
-TOKENS = {
-    "account":{"chat_id":"","phone":"+972549331207","tokens":["771941522:AAGpG71f6B50Kch2QANTihxyKwdImWWmHB8"],"password":"","last_seen":{"date":"","months_ago":"","days_ago":""}}
+TOKENS = [
+    {"chat_id":"","phone":"+972549331207","password":"","tokens":["771941522:AAGpG71f6B50Kch2QANTihxyKwdImWWmHB8"],"last_seen":{"date":"","months_ago":"","days_ago":""}}
 
-}
+]
 
-TOKEN = TOKENS["account"]["tokens"][0]
+TOKEN = TOKENS[0]["tokens"][0]
 
 # - set users limit per bot - #
 Users_Per_Bot = 0
@@ -20,8 +20,8 @@ Users_Per_Bot = 0
 # - the message will send + username of bot whit lowest users - #
 message_when_reach_limit = "this bot has reach full capacity please enter this link"
 
-# - notify when users capacity reach this presents (80% = 0.8, 50% = 0.5, etc) - #
-presents = 0.8
+# - notify when users capacity reach this presents - #
+presents = 80
 
 # - choose how to send message when reach limit , the value of user_privileges of user - #
 send_to = "root"
