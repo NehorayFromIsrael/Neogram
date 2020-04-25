@@ -31,6 +31,7 @@ def Func(Bot_Variables):
             min_value = bots_count[0][1]
         else:
             if min_value > count_bot:
+                min_value=count_bot
                 min_value_place = i
 
 
@@ -39,7 +40,9 @@ def Func(Bot_Variables):
         min_bot = Assets.find_one({"id":bots_count[min_value_place][0]})["username"]
         return [True,min_bot]
     else:
-        return [False]
+        min_bot = Assets.find_one({"id":bots_count[min_value_place][0]})["username"]
+
+        return [False,min_bot]
 
 
 

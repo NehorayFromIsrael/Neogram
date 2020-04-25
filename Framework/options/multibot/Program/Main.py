@@ -20,6 +20,7 @@ import configure
 import Program.Update_Bot_Asset as Update_Bot_Asset
 import Add_User_Info
 import Program.check_if_there_is_bot_that_not_reach_the_limit as cl
+import Program.Update_Account_Asset as Update_Account_Asset
 #*******************************************************************************************
 
 class Telegram_Bot(object):
@@ -82,8 +83,7 @@ class Telegram_Bot(object):
         # - get info - #
         cls.Bot_Variables = Get_Bot_Variables.Func([update,context],cls.TOKEN)
 
-
-
+        Update_Account_Asset.Func(cls.Bot_Variables)
 
         Chat_ID = cls.Bot_Variables[1]
 
@@ -103,7 +103,9 @@ class Telegram_Bot(object):
                 START.Func(update, context)
             # - else send him message whit the bot he is registered with - #
             else:
-                bot_user_name = ""
+
+                bot_user = cls.Bot_Variables[10][0].find_one({"chat_id": Chat_ID})["bot_user"]
+                bot_user_name = cls.Bot_Variables[10][2].find_one({"id": bot_user})["username"]
                 Send.Message(cls.Bot_Variables,configure.message_when_reach_limit + " @" + bot_user_name)
 
         # - if user not exists in mongo - #

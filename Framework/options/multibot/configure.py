@@ -4,10 +4,10 @@ import Program.Connect_To_Mongo as Mon
 
 # - SET BOTS TOKENS - #
 # - all tokens in every account list will run  by threads (in the same time)- #
-
+# the phone and password are optional, its only to keep track on your telegram accounts in the database
 
 TOKENS = [
-    {"chat_id":"","phone":"+972549331207","password":"","tokens":["771941522:AAGpG71f6B50Kch2QANTihxyKwdImWWmHB8"],"last_seen":{"date":"","months_ago":"","days_ago":""}}
+    {"phone": "+972549331207", "password": "","tokens": ["771941522:AAGpG71f6B50Kch2QANTihxyKwdImWWmHB8"]}
 
 ]
 
