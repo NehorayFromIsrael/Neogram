@@ -11,20 +11,19 @@ TOKENS = [
 
 ]
 
-TOKEN = TOKENS[0]["tokens"][0]
+
 
 # - set users limit per bot - #
-Users_Per_Bot = 0
+Users_Per_Bot = 1
 
 # - edit what message user get if he enter to bot thats reach limit - #
 # - the message will send + username of bot whit lowest users - #
 message_when_reach_limit = "this bot has reach full capacity please enter this link"
 
 # - notify when users capacity reach this presents - #
-presents = 80
+presents = 99
 
-# - choose how to send message when reach limit , the value of user_privileges of user - #
-send_to = "root"
+
 
 #_______________________________________________________#
 # - SET DATABASES - #
