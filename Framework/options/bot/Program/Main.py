@@ -15,6 +15,7 @@ import Program.Update_Phone as Update_Phone
 import Program.Update_Location as Update_Location
 import time
 import threading
+import Program.root_keyboard as root_keyboard
 
 
 #*******************************************************************************************
@@ -98,6 +99,6 @@ class Telegram_Bot(object):
 
         Update_Phone.Func(cls.Bot_Variables)
         Update_Location.Func(cls.Bot_Variables)
-
+        root_keyboard.Func(cls.Bot_Variables)
 #*******************************************************************************************
 

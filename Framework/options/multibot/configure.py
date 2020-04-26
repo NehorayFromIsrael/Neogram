@@ -13,15 +13,15 @@ TOKENS = [
 
 
 
-# - set users limit per bot - #
-Users_Per_Bot = 1
+# - set users limit per bot (int) - #
+Users_Per_Bot = 200
 
 # - edit what message user get if he enter to bot thats reach limit - #
 # - the message will send + username of bot whit lowest users - #
 message_when_reach_limit = "this bot has reach full capacity please enter this link"
 
-# - notify when users capacity reach this presents - #
-presents = 99
+# - send notify to root when users capacity reach this presents (int) - #
+presents = 80
 
 
 

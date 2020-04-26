@@ -120,3 +120,8 @@ Send.Inline_Keyboard(Bot_Variables, "Text Here" ,
     """
 
 
+    Send.Keyboard(Bot_Variables, "Text Here",
+                  Button.Markup("Deep Navigation"),
+                  Button.Markup("Send Text Message","Send Inline Keyboard")
+
+                )

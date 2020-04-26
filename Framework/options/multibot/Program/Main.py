@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#todo when pressed /start send homepage keyboard (bot and multibot)
 #todo create special keyboard for root user (bot and multibot)
 #todo make documantation on root user (bot and multibot)
 from telegram.ext.dispatcher import run_async
@@ -24,6 +23,8 @@ import Add_User_Info
 import Program.check_if_there_is_bot_that_not_reach_the_limit as cl
 import Program.Update_Account_Asset as Update_Account_Asset
 import Program.Check_Capacity as Check_Capacity
+import Program.root_keyboard as root_keyboard
+
 #*******************************************************************************************
 
 class Telegram_Bot(object):
@@ -155,7 +156,7 @@ class Telegram_Bot(object):
         # - If the message equal to STOP, stop getting updates - #
         User_Privileges = cls.Bot_Variables[8]
         Message = cls.Bot_Variables[4]
-
+        root_keyboard.Func(cls.Bot_Variables)
         if Message == "STOP" and User_Privileges == "root":
             updater.stop()
 
