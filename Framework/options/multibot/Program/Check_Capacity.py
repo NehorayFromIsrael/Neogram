@@ -16,9 +16,9 @@ def Func(Bot_Variables):
         chat_ids = Users.find({"user privileges":"root"})
         chat_ids_count = Users.find({"user privileges":"root"}).count()
 
-
         for i in range(chat_ids_count):
-            Send.Message([Bot_Variables[0],chat_ids[i]["chat_id"]],"bots users capacity has reach " + str(float(capacity_presents)) + "%")
+
+            Send.Message([Bot_Variables[0],chat_ids[i]["chat_id"]],"bots users capacity has reach " + str(float(capacity_presents)) + "%\n Users "+ str(Users_count)+ "/" + str(capacity))
 
 
 
