@@ -3,6 +3,8 @@ import configure
 import Program.install as install
 import ctypes, os
 import threading
+import Program.Update_Account_Asset as Update_Account_Asset
+import Program.Update_Bot_Asset as Update_Bot_Asset
 
 """  run this file to run the telegram bot   """
 
@@ -38,12 +40,22 @@ except:
 
 TOKENS = configure.TOKENS
 
+for j in range(len(TOKENS)):
+    for z in range(len(TOKENS[j]["tokens"])):
+        this_bot = telegram.Bot(TOKENS[j]["tokens"][z]).get_me()
+        bot_var = [TOKENS[j]["tokens"][z],"","","","","","","","","",configure.collections]
+        Update_Bot_Asset.Func(bot_var,this_bot)
 
-for i in range(len(TOKENS)):
-    for x in range(len(TOKENS[i]["tokens"])):
-        T = TOKENS[i]["tokens"][x]
+Update_Account_Asset.Func(bot_var)
 
-        threading.Thread(target=Run_BOT, args=(str(T))).start()
+
+Assets = configure.Mongo_Assets.find({})
+len_assets = configure.Mongo_Assets.find({}).count()
+
+for i in range(len_assets):
+
+    if Assets[i]["type"] == "bot":
+        threading.Thread(target=Run_BOT, args=(str(Assets[i]["TOKEN"]))).start()
 
 
     

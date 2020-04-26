@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 #todo create special keyboard for root user (bot and multibot)
+#todo first user thst interact the bot becomes root
 #todo make documantation on root user (bot and multibot)
 from telegram.ext.dispatcher import run_async
 from telegram.ext import Updater
@@ -87,7 +88,7 @@ class Telegram_Bot(object):
         # - get info - #
         cls.Bot_Variables = Get_Bot_Variables.Func([update,context],cls.TOKEN)
 
-        Update_Account_Asset.Func(cls.Bot_Variables)
+        #Update_Account_Asset.Func(cls.Bot_Variables)
 
         Chat_ID = cls.Bot_Variables[1]
 
@@ -97,7 +98,10 @@ class Telegram_Bot(object):
 
         number_of_users_in_this_bot = cls.Bot_Variables[10][0].find({"bot_user":  this_bot["id"]}).count()
 
-        Update_Bot_Asset.Func(cls.Bot_Variables,this_bot)
+        #Update_Bot_Asset.Func(cls.Bot_Variables,this_bot)
+
+
+
 
         # - if user exists in mongo - #
         if User_Doc != None:
