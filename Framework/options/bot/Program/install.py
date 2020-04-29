@@ -1,7 +1,7 @@
 import sys
 import re
 import subprocess as s
-
+import configure
 
 #requirements for manually installation:
 
@@ -17,7 +17,8 @@ def Func():
 
     requirements = ["pymongo==3.10.1","python-telegram-bot==12.4.2","telegram==0.0.1"]
 
-
+    for i in range(len(configure.req)):
+        requirements.append(configure.req[i])
 
     print("install requirements...\n")
     if re.search("^win",sys.platform):

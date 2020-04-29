@@ -29,4 +29,6 @@ collections = [Mongo_Users,Mongo_Locations]
 Other_Variables = []
 
 
+# - requirements , add to list for automatic req installation- #
+req = []
 
