@@ -72,6 +72,8 @@ class Telegram_Bot(object):
     @run_async
     def start(cls,update, context):
 
+        cls.Bot_Variables = Get_Bot_Variables.Func([update,context])
+
         START.Func(update, context)
 
         # - save user information in database - #
