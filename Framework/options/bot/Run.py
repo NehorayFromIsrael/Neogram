@@ -24,7 +24,7 @@ except:
 
     
     if is_admin == True:
-         install.Func()
+         install.Func(configure.req)
     else:
         print(" its your first time to run the bot on this machine you have to run as administrator in order to install requierments")
 
