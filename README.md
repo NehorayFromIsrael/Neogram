@@ -1,6 +1,16 @@
 # Neogram
 GUI Development Framework For Telegram Bots in Python
 
+
+#System Requirements
+
+Windows os 7+
+Python 3.8.2
+
+*current version work only in windows
+
+#Install
+
 to install Neogram simply run "install.py" when you run "install.py" file **make sure**:
 
 1. to run with python3 
