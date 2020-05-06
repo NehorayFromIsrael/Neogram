@@ -9,7 +9,7 @@ Python 3.8.2
 
 *current version work only in windows
 
-#Install
+# Install
 
 to install Neogram simply run "install.py" when you run "install.py" file **make sure**:
 
