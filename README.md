@@ -2,7 +2,7 @@
 GUI Development Framework For Telegram Bots in Python
 
 
-#System Requirements
+# System Requirements
 
 Windows os 7+
 Python 3.8.2
